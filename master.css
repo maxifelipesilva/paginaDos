@@ -1,0 +1,199 @@
+/*
+style guide
+0.reset
+1.layout
+2.generic items
+3.parts of the web
+4.list
+5.form
+6.animation
+colores
+1.#2c3e56
+2.#34495e
+3.#3498db
+4.#fff
+*/
+/* 0 */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*1 */
+body{
+    text-align: center;
+    font: 300 20px/1.7 'roboto condensed';
+}
+header{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarifas {
+    text-align: left;
+}
+.list-service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-service figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+/*2*/
+header{
+    height: 450px;
+    background: url(imagenes/dummy-header.jpg) no-repeat center top;
+    background-size: cover;
+}
+.navbar{
+    height: 63%;
+    background: #2c3e50;
+}
+.navbar a{
+    color: #fff;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 20px 'Stint Ultra Condensed';
+}
+.title{
+    margin-bottom: 40px;
+    font: 60px 'Stint Ultra Condensed';
+    text-transform: uppercase;
+}
+p{
+    margin-bottom: 40px;
+}
+.btn{
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    display: inline-block;
+    text-decoration: none ;
+    color: #fff;
+}
+/*3*/
+.content{
+    padding: 80px 0;
+}
+.who{
+    background: #2c3e50;
+    color: #fff;
+}
+.who p{
+    max-width: 1055px;
+    margin: 0 auto;
+}
+.service{
+    background: #34495e;
+    color: #fff;
+}
+.tarifas{
+    background: url(imagenes/dummy-tarifas.jpg) no-repeat center top;
+    background-size: cover;
+    color: #fff;
+}
+.contain{
+    max-width: 1055%;
+    margin: 0 auto;
+}
+.tarifas p{
+    max-width: 450px;
+}
+.localizacion{
+    color: #34495e;
+    padding-bottom: 0;
+}
+.localizacion.map img{
+    max-width: 100%;
+}
+/*4*/
+.list-service figure{
+    position: relative;
+    width: 150%;
+    height: 190%;
+}
+.list-service figure::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 0;
+    background: #fff;
+    width: 170px;
+    height: 135px;
+}
+.list-service img{
+    position: relative;
+    z-index: 1;
+}
+
+.list-service li{
+    padding: 0 30px;
+}
+.list-service figcaption{
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: -40px;
+}
+
+/*5*/
+
+
+
+/*6*/
